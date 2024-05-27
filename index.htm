@@ -6,23 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Cookie Company</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Buy</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="navbar">
+        <img class="logo" src="Images/PrimaryLogo.png" alt="logo">
+            <nav>
+                <ul class="navlinks">
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="#">Items</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#"><button class="cartbutton"><img src="Images/CartIcon.png"></button></a>
     </header>
 
-    <h1>Deliciousness in every bite!</h1>
+    <main>
+        <aside>
+            <img src="Images/Cookie.png">
+        </aside>
+        <section>
+            <h1>Deliciousness in every bite!</h1>
 
-    <p>Every cookie made at the Kevin Cookie company is crafted with only the best ingredients. Butter from grass fed
-        cows. Unbleached flour with the best flavor and textures. Organic sugar only from India. Eggs from chickens that
-        listen to classical music. Even our water is special. It comes from the Cascade Mountain springs that we hike up
-        to retrieve. Baking is our passion and we take it very seriously.</p>
+            <p>Every cookie made at the Kevin Cookie company is crafted with only the best ingredients. Butter from grass fed
+            cows. Unbleached flour with the best flavor and textures. Organic sugar only from India. Eggs from chickens that
+            listen to classical music. Even our water is special. It comes from the Cascade Mountain springs that we hike up
+            to retrieve. Baking is our passion and we take it very seriously.</p>
+        </section>
+        <article>
+            <h1>See Secret Recipe</h1>
+            <form id="SecretRecipeRequest" onsubmit="handlePassword(event)">
+                <label>Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Submit</button>
+            </form>
+            <script src="formHandler.js"></script>
+        </article>
+    </main>
 </body>
 </html>
