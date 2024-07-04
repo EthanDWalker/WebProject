@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Cookie Company</title>
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="header.css">
+
 </head>
 <body>
     <header class="navbar">
@@ -34,13 +36,14 @@
         </section>
         <article>
             <h1>See Secret Recipe</h1>
-            <form id="SecretRecipeRequest" onsubmit="handlePassword(event)">
+            <form id="SecretRecipeRequest">
                 <label>Password:</label>
                 <input type="password" id="password" name="password" required>
                 <button type="submit">Submit</button>
             </form>
-            <script src="formHandler.js"></script>
         </article>
     </main>
+
+    <script src="/src/app.js"></script>
 </body>
 </html>
